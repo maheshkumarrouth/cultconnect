@@ -15,5 +15,13 @@ server:
   port: 8080
   servlet:
     context-path: /cultconnect
+    
+  host:
+    connect-timeout-millis: 600000
+    socket-timeout-millis: 600000
+    max-total-connections: 200
+    max-per-route-connections: 20
+    time-unit: MILLISECONDS
+    time-to-live: 10000
 
 
