@@ -1,6 +1,9 @@
 zuul:
   routes:
-    users:
+    first:
+      path: /pull/**
+      url: http://backend.cultuzz.com:8018/ReservationInfoFetcher/pull/
+    second:
       path: /promotions/**
       url: http://backend.cultuzz.com:8018/ReservationInfoFetcher/promotions/
       
