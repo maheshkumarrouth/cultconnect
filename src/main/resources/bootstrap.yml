@@ -1,0 +1,13 @@
+zuul:
+  routes:
+    users:
+      path: /promotions/**
+      url: http://backend.cultuzz.com:8018/ReservationInfoFetcher
+
+
+server:
+  port: 8080
+  servlet:
+    context-path: /cultconnect
+
+
