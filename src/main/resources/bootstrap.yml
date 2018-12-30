@@ -2,8 +2,11 @@ zuul:
   routes:
     users:
       path: /promotions/**
-      url: http://backend.cultuzz.com:8018/ReservationInfoFetcher
-
+      url: http://backend.cultuzz.com:8018/ReservationInfoFetcher/promotions/
+      
+ribbon:
+  eureka:
+    enabled: false
 
 server:
   port: 8080
